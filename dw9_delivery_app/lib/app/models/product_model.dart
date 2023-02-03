@@ -1,13 +1,13 @@
 import 'dart:convert';
 
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-class ProductsModel {
+class ProductModel {
   final int id;
   final String name;
   final String description;
   final double price;
   final String image;
-  ProductsModel({
+  ProductModel({
     required this.id,
     required this.name,
     required this.description,
@@ -25,8 +25,8 @@ class ProductsModel {
     };
   }
 
-  factory ProductsModel.fromMap(Map<String, dynamic> map) {
-    return ProductsModel(
+  factory ProductModel.fromMap(Map<String, dynamic> map) {
+    return ProductModel(
       id: map['id'] as int,
       name: map['name'] as String,
       description: map['description'] as String,
@@ -37,6 +37,6 @@ class ProductsModel {
 
   String toJson() => json.encode(toMap());
 
-  factory ProductsModel.fromJson(String source) =>
-      ProductsModel.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory ProductModel.fromJson(String source) =>
+      ProductModel.fromMap(json.decode(source) as Map<String, dynamic>);
 }
