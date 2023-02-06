@@ -91,7 +91,9 @@ class _ProductDetailPageState
                       onPressed: () {
                         Navigator.of(context).pop(
                           OrderProductDto(
-                              product: widget.product, amount: amount),
+                            product: widget.product,
+                            amount: amount,
+                          ),
                         );
                       },
                       child: Row(
