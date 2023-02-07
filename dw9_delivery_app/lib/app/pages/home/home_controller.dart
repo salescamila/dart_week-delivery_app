@@ -40,7 +40,6 @@ class HomeController extends Cubit<HomeState> {
       shoppingBab.add(orderProduct);
     }
 
-    shoppingBab.add(orderProduct);
     emit(state.copyWith(shoppingBag: shoppingBab));
   }
 }

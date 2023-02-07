@@ -40,7 +40,7 @@ class _ProductDetailPageState
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.of(context).pop();
+                Navigator.pop(context);
               },
               child: Text(
                 'Cancelar',
